@@ -1,4 +1,4 @@
-# "Simplicity" Angularjs Blogging CMS
+# "AngularBlogg" Angularjs Blogging CMS
 
 "Simplicity" very very simple bloging CMS made using Angularjs + Nodejs + Mysql
 , I create this cms in 8 hours so this version full of bugs
@@ -15,4 +15,3 @@
 8. init your cms using the following comand "node server".
 9. now your cms available on :   localhost:8080 .
 10. to accses addpost page go to : http://localhost:8080/#/admin . note : you should be loggedin.
-
