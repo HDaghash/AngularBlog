@@ -1,2 +1,3 @@
-# -Simplicity-Angularjs-Blogging-CMS
-"Simplicity" very simple blog CMS made using Angularjs + Nodejs
+# "Simplicity" Angularjs Blogging CMS
+
+"Simplicity" very simple blog CMS made using Angularjs + Nodejs + Mysql
