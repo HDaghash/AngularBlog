@@ -13,6 +13,6 @@
 6. import the Demo db from db folder into your mysql workbench.
 7. create admin user using the following comand : "node scripts/create_admin.js".
 8. init your cms using the following comand "node server".
-9. now your cms available on : localhost:8080 .
-10. to accses adpost page go to : http://localhost:8080/#/admin . note : you should be loggedin.
+9. now your cms available on :   localhost:8080 .
+10. to accses addpost page go to : http://localhost:8080/#/admin . note : you should be loggedin.
 
