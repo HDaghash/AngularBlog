@@ -1,0 +1,47 @@
+
+<div class="row">
+<div class="medium-7 large-10 columns lastpost" style="background:url({{lastPost.postImage}}); border-bottom: solid 2px #646464;height:400px;background-repeat: no-repeat;background-size: cover;">
+<h1 ng-click="goToPost(lastPost.postId)" class="hand-pointer">{{lastPost.postTitle}}</h1>
+<p class="subheader" ng-bind-html="lastPost.postContent | limitTo : 150">...</p>
+<p class="author">by {{lastPost.postAuthor}}</p>
+<button class="lastpostbtn" ng-click="goToPost(lastPost.postId)"><i class="fa fa-angle-double-right"></i> Read More</button>
+</div>
+<div class="medium-4 large-2 columns">
+<div class="callout secondary search">
+<form>
+<div class="row">
+<div class="small-12 columns">
+<label>Find Your Dream Planet
+<input type="text" placeholder="Search destinations">
+</label>
+</div>
+<div class="small-12 columns">
+<label>Number of Moons
+<input type="number" placeholder="Moons required">
+</label>
+<button type="submit" class="button">Search Now!</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="row column">
+<hr>
+</div>
+<div class="row column">
+<p class="lead">Last Blogs :</p>
+</div>
+<div class="row small-up-1 medium-up-2 large-up-3">
+<div class="column" ng-repeat="post in posts | limitTo: postLimit">
+<div class="callout">
+<p class="author"> By : {{post.postAuthor}}  </p>
+<p><img ng-src="{{post.postImage}}" ng-alt="{{post.postTitle}}"></p>
+<p class="lead hand-pointer" ng-click="goToPost(post.postId)">{{post.postTitle | limitTo : 60}}</p>
+<p class="subheader" ng-bind-html="post.postContent | limitTo : 80">...</p>
+</div>
+</div>
+</div>
+<div class="row column">
+<a class="button hollow expanded" ng-click="increasePost();">Load More</a>
+</div>

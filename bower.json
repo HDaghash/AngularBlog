@@ -1,0 +1,32 @@
+{
+  "name": "Blog",
+  "description": "blog cms using angularjs and nodejs",
+  "main": "lib",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "blog"
+  ],
+  "authors": [
+    "Hasan Daghash"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.8",
+    "foundation-sites": "~6.1.1",
+    "moment": "~2.10.6",
+    "textAngular": "~1.4.6",
+    "angular-route": "~1.4.8",
+    "angular-sanitize": "~1.4.8",
+    "angular-ui-notification": "~0.1.0"
+  }
+}

@@ -1,0 +1,111 @@
+/*
+custome css
+*/
+*{
+  font-family: 'GothamBook';
+}
+h1{
+  font-family: 'GothamBook';
+}
+body{
+  background: #181818;
+}
+
+#realEstateMenu{
+  background-color: #222222;
+}
+
+.top-bar, .top-bar ul{
+    background-color: #222222;
+}
+.menu>li{
+color: #aaa;
+}
+.menu a{
+  color: #F05A28;
+}
+.button{
+  background-color: #333333;
+}
+.button:hover{
+  background-color: #FF7B39;
+}
+.callout{
+  background-color: #222222;
+  border-bottom: solid 2px #646464;
+}
+h1, .lead{
+  color: #d3d3d3;
+}
+.callout.secondary{
+  background-color: #222222;
+}
+label{
+  color: #d3d3d3;
+}
+.button.hollow{
+  color: #F05A28;
+  border-color: #F05A28;
+}
+.author{
+  color: #8a8a8a;
+  font-size: 12px;
+}
+.bg-color{
+  background-color: #222222;
+  padding: 20px;
+  margin-bottom: 10px;
+  color: #8a8a8a;
+}
+.bg-color button{
+  background-color: #FF7B39;
+  padding: 5px;
+  margin: 5px;
+  color: #fff;
+}
+
+.button.hollow:hover{
+  border-color: #fff;
+  color: #fff;
+}
+.lastpost h1,p{
+  color: #fff;
+}
+.lastpost{
+  padding: 50px;
+}
+.lastpost .author{
+  font-size: 16px;
+}
+.search{
+  height: 400px;
+}
+.lastpostbtn{
+  background-color: rgba(0,0,0,.4);
+  border-color: transparent;
+  padding: 15px 50px 15px 50px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.lastpostbtn:hover{
+  background-color: rgba(0,0,0,.6);
+}
+.subheader{
+  color: #fff;
+  max-width: 700px;
+}
+
+#toolbar button{
+  float: left;
+}
+
+#toolbarWC{
+  display: none !important;
+}
+#toolbarCC{
+  display: none !important;
+}
+.hand-pointer{
+  cursor: pointer;
+}

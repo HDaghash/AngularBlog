@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simplicity Blog !</title>
+<!-- css -->
+<link rel="stylesheet" href="bower_components/foundation-sites/dist/foundation.min.css">
+<link rel='stylesheet' href='/bower_components/textAngular/dist/textAngular.css'>
+<link rel='stylesheet' href='/assets/font/font.css'>
+<link rel='stylesheet' href='/bower_components/font-awesome/css/font-awesome.min.css'>
+<link rel='stylesheet' href='/bower_components/angular-ui-notification/dist/angular-ui-notification.css'>
+
+
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body ng-app="blogApp" ng-controller="blogController" ng-cloak>
+
+  <div class="top-bar" id="realEstateMenu">
+  <div class="top-bar-left">
+  <ul class="menu" data-responsive-menu="accordion">
+  <li class="menu-text"><a href="#/">Simplicity Blog </a></li>
+  </ul>
+  </div>
+  <div class="top-bar-right">
+  <ul class="menu" ng-init="checkUser()">
+  <li ng-if="loggedin == 0"><a class="button" ng-click="goToRout('/login')">Login</a></li>
+  <li ng-if="loggedin != 0"><a class="button" ng-click="logout()">Logout</a></li>
+  </ul>
+  </div>
+  </div>
+
+  <br>
+  <div ng-view></div>
+  <footer>
+  <div class="row expanded callout secondary">
+  <div class="small-6 large-3 columns">
+  <p class="lead">Offices</p>
+  <ul class="menu vertical">
+  <li><a href="#">One</a></li>
+  <li><a href="#">Two</a></li>
+  <li><a href="#">Three</a></li>
+  <li><a href="#">Four</a></li>
+  </ul>
+  </div>
+  <div class="small-6 large-3 columns">
+  <p class="lead">Solar Systems</p>
+  <ul class="menu vertical">
+  <li><a href="#">One</a></li>
+  <li><a href="#">Two</a></li>
+  <li><a href="#">Three</a></li>
+  <li><a href="#">Four</a></li>
+  </ul>
+  </div>
+  <div class="small-6 large-3 columns">
+  <p class="lead">Contact</p>
+  <ul class="menu vertical">
+  <li><a href="#"><i class="fi-social-twitter"></i> Twitter</a></li>
+  <li><a href="#"><i class="fi-social-facebook"></i> Facebook</a></li>
+  <li><a href="#"><i class="fi-social-instagram"></i> Instagram</a></li>
+  <li><a href="#"><i class="fi-social-pinterest"></i> Pinterest</a></li>
+  </ul>
+  </div>
+  <div class="small-6 large-3 columns">
+  <p class="lead">Offices</p>
+  <ul class="menu vertical">
+  <li><a href="#">One</a></li>
+  <li><a href="#">Two</a></li>
+  <li><a href="#">Three</a></li>
+  <li><a href="#">Four</a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="row">
+  <div class="medium-6 columns">
+  <ul class="menu">
+  <li><a href="#">Legal</a></li>
+  <li><a href="#">Partner</a></li>
+  <li><a href="#">Explore</a></li>
+  </ul>
+  </div>
+  <div class="medium-6 columns">
+  <ul class="menu float-right">
+  <li class="menu-text">Copyright</li>
+  </ul>
+  </div>
+  </div>
+  </footer>
+
+<!-- start including libs -->
+<script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="./controllers/app.js"></script>
+<script type="text/javascript" src="./controllers/authController.js"></script>
+<script type="text/javascript" src="./controllers/postController.js"></script>
+<script type="text/javascript" src="./controllers/login.js"></script>
+<script type="text/javascript" src="./routes/routes.js"></script>
+<!-- api -->
+<script type="text/javascript" src="./services/getposts.js"></script>
+<script type="text/javascript" src="./services/addpost.js"></script>
+<script type="text/javascript" src="./services/login.js"></script>
+<!--  end api-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src='bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
+<script src='bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
+<script src='bower_components/textAngular/dist/textAngular.min.js'></script>
+<script type="text/javascript" src="./bower_components/angular-ui-notification/dist/angular-ui-notification.min.js"></script>
+
+
+
+
+</body>
+</html>
