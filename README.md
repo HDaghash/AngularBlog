@@ -1,6 +1,6 @@
 # "AngularBlogg" Angularjs Blogging CMS
 
-"Simplicity" very very simple bloging CMS made using Angularjs + Nodejs + Mysql
+"AngularBlogg" very very simple bloging CMS made using Angularjs + Nodejs + Mysql
 , I create this cms in 8 hours so this version full of bugs
 
 ## Usage
