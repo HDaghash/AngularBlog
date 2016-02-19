@@ -1,7 +1,12 @@
 <div class="row">
-<div class="medium-7 large-9 columns bg-color">
+<div class="medium-12 large-12 small-12 columns bg-color">
   <input type="text" placeholder="insert post title" ng-model="postTitle" ng-required="true"/>
   <div text-angular ng-model="htmlVariable"></div>
+
+  - upload the main image for your post :
+  <input type="hidden" role="uploadcare-uploader" name="my_file" data-images-onlys/>
+  <br>
   <a class="button" ng-click="savePost()">Save</a>
 </div>
+
 </div>

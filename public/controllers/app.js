@@ -1,5 +1,5 @@
 var blog = angular.module('blogApp',['ngRoute','textAngular','ui-notification']);
-blog.controller('blogController', function($scope,postsService,$location,$rootScope,login,$http){
+blog.controller('blogController', function($scope,postsService,$location,$rootScope,login){
   $scope.imagePath = './assets/images/washedout.png';
   function getposts() {
       postsService.getposts().then(function (data) {

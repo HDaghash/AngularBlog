@@ -10,6 +10,7 @@ angular.module('blogApp')
     var request = $http({
         method: "POST",
           url: "/login",
+          contentType: "application/json",
           data:data
     }).then(function(response) {
         if(response.status == 200 ){

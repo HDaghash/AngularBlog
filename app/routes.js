@@ -40,7 +40,7 @@ app.post('/addpost',auth, function(req, res) {
   app.post('/login',passport.authenticate('local-login'),function(req, res) {
     // If this function gets called, authentication was successful.
     // `req.user` contains the authenticated user.
-     res.send("1");
+    return done(null, user);
   });
 
   // =====================================
