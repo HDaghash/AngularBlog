@@ -23,7 +23,7 @@
   <div class="top-bar-right">
   <ul class="menu" ng-init="checkUser()">
   <li ng-if="loggedin == 0"><a class="button" ng-click="goToRout('/login')">Login</a></li>
-  <li ng-if="loggedin != 0"><a class="button" ng-click="logout()">Logout</a></li>
+  <li ng-if="loggedin != 0">Hello {{username}} , <a class="button" ng-click="logout()">Logout</a></li>
   </ul>
   </div>
   </div>

@@ -46,5 +46,9 @@ blog.controller('blogController', function($scope,postsService,$location,$rootSc
         });
       }
 
+    function init(){
+            $scope.username = localStorage.getItem("username");
+    }
+    init();
 
 });

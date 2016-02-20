@@ -18,14 +18,23 @@ angular.module('blogApp')
           setTimeout(function(){
             $window.location.reload();
           },1000)
+            saveUserNameToWelcome(data.username);
         }else{
           Notification.error('wrong user name or password !!');
+            saveUserNameToWelcome(data.username);
         }
       }, function errorCallback(response) {
-    Notification.error('wrong user name or password !!');
+    Notification.error('wrong user name or password !!!');
+        saveUserNameToWelcome(data.username);
   });
 
   }
+
+    function saveUserNameToWelcome(username){
+        if(typeof(Storage) !== "undefined") {
+            localStorage.setItem("username", username);
+        }
+    }
 
   function logout(){
     var request = $http({
